@@ -66,7 +66,7 @@
             if (options.force) {
               return vanilla;
             } else {
-              if (vanilla.get('deleted_at')) {
+              if (vanilla && vanilla.get('deleted_at')) {
                 return null;
               } else {
                 return vanilla;
