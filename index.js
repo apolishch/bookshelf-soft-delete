@@ -35,8 +35,12 @@
             })
       },
       destroy: function () {
-        this.set('deleted_at', new Date());
-        return this.save();
+        if (this.soft) {
+          this.set('deleted_at', new Date());
+          return this.save();
+        } else {
+          return mProto.destroy.apply(this, arguments);
+        }
       }
     });
 
