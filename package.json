@@ -12,7 +12,7 @@
     "orm",
     "soft-delete"
   ],
-  "author": "Abraham Polishchuk (https://github.com/apolishch)",
+  "author": "Abraham Polishchuk <apolishc@gmail.com> (https://github.com/apolishch)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apolishch/bookshelf-soft-delete/issues"
