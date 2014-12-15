@@ -48,7 +48,6 @@
             if (options.force) {
               return vanilla;    
             } else {
-              console.log(vanilla.models);
               vanilla.models = Lazy(vanilla.models).reject(function (item) {
                 return item.get('deleted_at')
               }).value();
